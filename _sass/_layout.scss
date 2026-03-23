@@ -25,6 +25,8 @@
     background-color: $primary-color;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    padding: 1%;
 }
 
 .header-logo {
