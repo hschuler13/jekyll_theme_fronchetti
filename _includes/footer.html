@@ -7,10 +7,10 @@
           <div class="footer-logo"><img src="{{ site.footer.logo | relative_url }}"></div>
         {% endif -%}
         {%- if site.footer.copyright %}
-          <p>{{ site.footer.copyright }}</p>
+          <p class="footer-text">{{ site.footer.copyright }}</p>
         {% endif -%}
         {%- if site.footer.email %}
-          <a>{{ site.footer.email }}</a>
+          <a class="footer-text" href="mailto: {{ site.footer.email }}">{{ site.footer.email }}</a>
         {% endif -%}
         {%- if site.footer.languages %}
           <ul>

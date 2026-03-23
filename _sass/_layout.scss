@@ -63,10 +63,6 @@ p, a , span {
     padding: 10px 20px 10px 20px;
 }
 
-.footer-subwrapper-left, .footer-subwrapper-right {
-    color: $secondary-color;
-}
-
 .footer-subwrapper-left {
     text-align: left;
     align-items: left;
@@ -77,4 +73,9 @@ p, a , span {
     height: 15%;
     width: 30%;
     opacity: 0.5;
+    align-items: right;
+}
+
+.footer-text {
+    color: $secondary-color;
 }
