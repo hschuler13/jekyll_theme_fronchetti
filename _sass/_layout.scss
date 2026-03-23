@@ -1,6 +1,6 @@
 @use 'variables';
 
-.hfContainer {
+/*.hfContainer {
     background-color: $primary-color;
     max-width: 100%;
     display: flex;
@@ -17,18 +17,28 @@
 
 .site-header {
     
-}
+}*/
 
-.nav-items {
+.header-container {
     height: 20%;
     width: 100%;
     background-color: $primary-color;
+}
+
+.header-logo {
+    height: 20%;
+    width: 10%;
+}
+
+.nav-items {
+    
 }
 
 .nav-item {
     font-family: $header-font;
     color: $secondary-color;
     font-size: 30%;
+    text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
