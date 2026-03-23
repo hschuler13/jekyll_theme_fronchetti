@@ -1,24 +1,21 @@
 @use 'variables';
 
-/*.hfContainer {
-    background-color: $primary-color;
-    max-width: 100%;
-    display: flex;
-    justify-content: space-between;
+/* html element styling */
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.lfContainer {
-
+h1, h2, h3, h4, h5, h6 {
+    font-family: $header-font;
 }
 
-.rfContainer{
-
+p, a , span {
+    font-family: $p-font;
+    color: $text-color;
 }
 
-.site-header {
-    
-}*/
-
+/* header & navbar styling */
 .header-container {
     height: 20%;
     width: screen;
@@ -33,7 +30,6 @@
 .header-logo {
     height: 20%;
     width: 10%;
-
 }
 
 .nav-items {
@@ -49,36 +45,26 @@
     padding: 0px 10px 0px 10px;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: $header-font;
-}
-
-p, a , span {
-    font-family: $p-font;
-    color: $text-color;
-}
-
+/* footer styling */
 .footer {
     width: 100%;
     height: 20%;
-    background-color: $primary-color;
+    
 }
 
-.footer-wrapper {
+.footer-container {
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 20%;
+    background-color: $primary-color;
     color: $secondary-color;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
 }
 
 .footer-subwrapper-left, .footer-subwrapper-right {
-    display: inline-block;
+    color: $secondary-color;
 }
 
 .footer-subwrapper-left {

@@ -1,10 +1,10 @@
 <footer class="footer">
-  <div class="footer-wrapper">
+  <div class="footer-container">
 
     {%- if site.footer %}
-      <div class="footer-subwrapper-left">
-        {%- if site.footer.logo.source %}
-          <p>{{ site.footer.logo.source }}</p>
+      <div class="footer-subcontainer-left">
+        {%- if site.footer.logo %}
+          <div class="footer-logo"><img src="{{ site.footer.logo | relative_url }}"></div>
         {% endif -%}
         {%- if site.footer.copyright %}
           <p>{{ site.footer.copyright }}</p>
@@ -21,9 +21,9 @@
         {% endif -%}
       </div>
 
-      <div class="footer-subwrapper-right">
-        {%- if footer.logo.source %}
-          <p class="big-logo">{{ footer.logo.source }}</p>
+      <div class="footer-subcontainer-right">
+        {%- if footer.logo %}
+          <img src="{{ site.header.logo | relative_url }}">
         {% endif -%}
       </div>
     {% endif -%}
