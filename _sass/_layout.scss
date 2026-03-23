@@ -49,7 +49,6 @@ p, a , span, ul li, ol li {
 .footer {
     width: 100%;
     height: 20%;
-    
 }
 
 .footer-container {
@@ -78,4 +77,6 @@ p, a , span, ul li, ol li {
 
 .footer-text {
     color: $secondary-color;
+    display: flex;
+    flex-direction: row;
 }

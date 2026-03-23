@@ -14,11 +14,13 @@
         {% endif -%}
         {%- if site.footer.languages %}
           {%- for language in site.footer.languages%}
-            {%- if language != last %}
-              <p class="footer-text"> {{ language }} |</p>
-            {%- else %}
-              <p class="footer-text"> {{ language }} </p>
-            {% endif -%}
+            <div class="footer-text">
+              {%- if language != last %}
+                <p> {{ language }} |</p>
+              {%- else %}
+                <p> {{ language }} </p>
+              {% endif -%}
+            </div>
           {% endfor -%}
         {% endif -%}
       </div>
