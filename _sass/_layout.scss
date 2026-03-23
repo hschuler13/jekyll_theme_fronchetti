@@ -1,0 +1,69 @@
+@use 'variables';
+
+.hfContainer {
+    background-color: $primary-color;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lfContainer {
+
+}
+
+.rfContainer{
+
+}
+
+.site-header {
+    
+}
+
+.nav-items {
+    height: 20%;
+    background-color: $primary-color;
+}
+
+.nav-item {
+    font-family: $header-font;
+    font-size: 15%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $header-font;
+}
+
+p, a , span {
+    font-family: $p-font;
+    color: $text-color;
+}
+
+.footer {
+    width: 100%;
+    height: 20%;
+    background-color: $primary-color;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 20%;
+    color: $secondary-color;
+}
+
+.footer-subwrapper-left, .footer-subwrapper-right {
+    display: inline-block;
+}
+
+.footer-subwrapper-left {
+    text-align: left;
+    align-items: left;
+    display: block;
+}
+
+.footer-subwrapper-right svg {
+    height: 15%;
+    width: 30%;
+    opacity: 0.5;
+}

@@ -1,0 +1,32 @@
+<footer class="footer">
+  <div class="footer-wrapper">
+
+    {%- if site.footer %}
+      <div class="footer-subwrapper-left">
+        {%- if site.footer.logo.source %}
+          <p>{{ site.footer.logo.source }}</p>
+        {% endif -%}
+        {%- if site.footer.copyright %}
+          <p>{{ site.footer.copyright }}</p>
+        {% endif -%}
+        {%- if site.footer.email %}
+          <a>{{ site.footer.email }}</a>
+        {% endif -%}
+        {%- if site.footer.languages %}
+          <ul>
+            {%- for language in site.footer.languages%}
+            <li>{{ language }}</li>
+            {% endfor -%}
+          </ul>
+        {% endif -%}
+      </div>
+
+      <div class="footer-subwrapper-right">
+        {%- if footer.logo.source %}
+          <p class="big-logo">{{ footer.logo.source }}</p>
+        {% endif -%}
+      </div>
+    {% endif -%}
+
+  </div>
+</footer>
