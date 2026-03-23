@@ -13,11 +13,13 @@
           <a class="footer-text" href="mailto: {{ site.footer.email }}">{{ site.footer.email }}</a>
         {% endif -%}
         {%- if site.footer.languages %}
-          <ul>
-            {%- for language in site.footer.languages%}
-            <li>{{ language }}</li>
-            {% endfor -%}
-          </ul>
+          {%- for language in site.footer.languages%}
+            {%- if language != last %}
+              <p class="footer-text"> {{ language }} |</p>
+            {%- else %}
+              <p class="footer-text"> {{ language }} </p>
+            {% endif -%}
+          {% endfor -%}
         {% endif -%}
       </div>
 
