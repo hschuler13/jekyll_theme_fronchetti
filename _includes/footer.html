@@ -12,8 +12,7 @@
       <a class="footer-text" href="mailto: {{ site.footer.email }}"
         >{{ site.footer.email }}</a
       >
-      {% endif -%} {%- if site.footer.languages %} {%- if site.footer.languages
-      %}
+      {% endif -%} {%- if site.footer.languages %} 
       <div class="footer-languages">
         {%- for language in site.footer.languages %}
           <p class="footer-text">
@@ -21,7 +20,7 @@
           </p>
         {% endfor -%}
       </div>
-      {% endif -%} {% endif -%}
+      {% endif -%}
     </div>
 
     <div class="footer-subcontainer-right">
