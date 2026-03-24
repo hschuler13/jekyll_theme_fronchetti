@@ -16,7 +16,7 @@
       <div class="footer-languages">
         {%- for language in site.footer.languages %}
           <p class="footer-text">
-            {{ language }}{% unless forloop.last %} |  {% endunless %}
+            {{ language }}{% unless forloop.last %} | {% endunless %}
           </p>
         {% endfor -%}
       </div>
