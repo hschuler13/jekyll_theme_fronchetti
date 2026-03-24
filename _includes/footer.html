@@ -1,36 +1,36 @@
 <footer class="footer">
   <div class="footer-container">
-
     {%- if site.footer %}
-      <div class="footer-subcontainer-left">
-        {%- if site.footer.logo %}
-          <div class="footer-logo"><img src="{{ site.footer.logo | relative_url }}"></div>
-        {% endif -%}
-        {%- if site.footer.copyright %}
-          <p class="footer-text">{{ site.footer.copyright }}</p>
-        {% endif -%}
-        {%- if site.footer.email %}
-          <a class="footer-text" href="mailto: {{ site.footer.email }}">{{ site.footer.email }}</a>
-        {% endif -%}
-        {%- if site.footer.languages %}
-          {%- for language in site.footer.languages%}
-            <div class="footer-languages">
-              {%- if language != last %}
-                <p class="footer-text"> {{ language }} |</p>
-              {%- else %}
-                <p class="footer-text"> {{ language }} </p>
-              {% endif -%}
-            </div>
-          {% endfor -%}
-        {% endif -%}
+    <div class="footer-subcontainer-left">
+      {%- if site.footer.logo %}
+      <div class="footer-logo">
+        <img src="{{ site.footer.logo | relative_url }}" />
       </div>
+      {% endif -%} {%- if site.footer.copyright %}
+      <p class="footer-text">{{ site.footer.copyright }}</p>
+      {% endif -%} {%- if site.footer.email %}
+      <a class="footer-text" href="mailto: {{ site.footer.email }}"
+        >{{ site.footer.email }}</a
+      >
+      {% endif -%} {%- if site.footer.languages %} {%- if site.footer.languages
+      %}
+      <div class="footer-languages">
+        {%- for language in site.footer.languages %}
+        <div class="footer-language">
+          <p class="footer-text">
+            {{ language }}{% unless forloop.last %} |{% endunless %}
+          </p>
+        </div>
+        {% endfor -%}
+      </div>
+      {% endif -%} {% endif -%}
+    </div>
 
-      <div class="footer-subcontainer-right">
-        {%- if footer.logo %}
-          <img src="{{ site.footer.logo | relative_url }}">
-        {% endif -%}
-      </div>
+    <div class="footer-subcontainer-right">
+      {%- if footer.logo %}
+      <img src="{{ site.footer.logo | relative_url }}" />
+      {% endif -%}
+    </div>
     {% endif -%}
-
   </div>
 </footer>
