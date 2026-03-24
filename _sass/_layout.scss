@@ -79,8 +79,10 @@ p, a , span, ul li, ol li {
     align-items: right;
 }
 
+.footer-languages {
+    padding: 0px 10px 0px 10px;
+}
+
 .footer-text {
     color: $secondary-color;
-    display: flex;
-    flex-direction: row;
 }
