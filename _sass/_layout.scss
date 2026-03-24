@@ -65,7 +65,11 @@ p, a , span, ul li, ol li {
 .footer-subwrapper-left {
     text-align: left;
     align-items: left;
-    display: block;
+}
+
+.footer-subwrapper-right {
+    text-align: right;
+    align-items: right;
 }
 
 .footer-subwrapper-right svg {
