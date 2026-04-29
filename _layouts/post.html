@@ -9,7 +9,7 @@ layout: base
       {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
       {% assign pdate = page.date | date_to_xmlschema %}
       {%- if page.modified_date %}<span class="meta-label">Published:</span>{% endif %}
-      <time class="dt-published" datetime="{{ pdate }}" itemprop="datePublished">
+      <time class="date-format" datetime="{{ pdate }}" itemprop="datePublished">
         {{ pdate | date: date_format }}
       </time>
       {%- if page.modified_date -%}
